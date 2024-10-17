@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+/* style.css */
+
+/* style.css */
+
+.content-container {
+    max-width: 800px; /* Atur lebar maksimum konten */
+    margin: 40px auto; /* Memusatkan secara horizontal dengan jarak atas-bawah */
+    padding: 20px; /* Tambahkan padding untuk memberikan ruang di dalam box */
+    text-align: left; /* Teks di dalam box tetap rata kiri */
+    background-color: #f9f9f9; /* Tambahkan warna latar untuk visualisasi */
+    border-radius: 8px; /* Tambahkan sudut melingkar pada box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek 3D */
+}
+
+
+/* Pastikan elemen lain tidak memengaruhi tata letak */
+main {
+    display: flex;
+    justify-content: center; /* Ini akan memusatkan konten di dalam main */
+    align-items: center; /* Vertikal center jika diperlukan */
+    min-height: 80vh; /* Atur tinggi minimum untuk area main */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+nav ul li {
+    position: relative; /* Tetap ada untuk positioning dropdown */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a.active { /* Tambahkan efek hover dan aktif */
+    background-color: #555; /* Warna latar belakang saat hover atau aktif */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    z-index: 1000; /* Pastikan dropdown di atas elemen lain */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Tampilkan dropdown saat item menu di hover */
+}
+
+.dropdown li {
+    display: block; /* Tampilkan item dropdown secara vertikal */
+}
+
+.dropdown li a:hover,
+.dropdown li a.active { /* Tambahkan efek hover dan aktif pada item dropdown */
+    background-color: #444; /* Tambahkan efek hover pada item dropdown */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 0px 5%;
+    position: sticky;
+    align-items:center;
+    top: 0;
+    background-color: rgb(40, 28, 11);
+    z-index: 100000;
+    justify-content: space-between;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    height:60px;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a{
+    margin:30px;
+    font-family:myriad pro regular;
+    font-size: 15px;
+    font-weight:700;
+}
+
+.navname {
+    margin-left: 0;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 500;
+    background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    display: flex;
+    color: transparent;
+    animation: animated 5s linear infinite;
+}
+
+.navname a:hover {
+    color: aquamarine;
+}
+
+@keyframes animated {
+    to {background-position-x: 161px}
+}
